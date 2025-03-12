@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0" metadata-complete="true">
+
+    <display-name>Car Rental System</display-name>
+
+    <session-config>
+        <session-timeout>30</session-timeout> <!-- In minutes -->
+    </session-config>
+
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookCarServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.BookCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookCarServlet</servlet-name>
+        <url-pattern>/BookCarServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCarServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.DeleteCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCarServlet</servlet-name>
+        <url-pattern>/DeleteCarServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddCarServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.AddCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCarServlet</servlet-name>
+        <url-pattern>/AddCarServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DownloadInvoiceServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.DownloadInvoiceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadInvoiceServlet</servlet-name>
+        <url-pattern>/DownloadInvoiceServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome Page -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
